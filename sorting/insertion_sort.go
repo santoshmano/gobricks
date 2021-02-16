@@ -33,22 +33,24 @@ func InsertionSort(nums []int) {
 	}
 }
 
+// Recursive insertion sort
 func InsertionSortRec(nums []int) {
-	insertionSortRec(nums, 1, len(nums)-1)
+	insertionSortRec(nums, 0, len(nums)-1)
 }
 
 func insertionSortRec(nums []int, start int, end int) {
-	if start >= end {
+	if start > end {
 		return
 	}
 
-	minIndex := start
-	for i := start - 1; i >= 0; i-- {
-		if nums[i] < nums[minIndex] {
-			minIndex = i
-		}
+	// array from index 0 to start-1 is sorted, place nums[start]
+	// in that range
+	val := nums[start]
+	i := start - 1
+	for ; i >= 0 && nums[i] > val; i-- {
+		nums[i+1] = nums[i]
 	}
-	nums[start], nums[minIndex] = nums[minIndex], nums[start]
+	nums[i+1] = val
 
 	insertionSortRec(nums, start+1, end)
 }

@@ -56,7 +56,7 @@ func TestBubbleSortRecInt(t *testing.T) {
 	for _, testcase := range genSortingTestData() {
 		BubbleSortRec(testcase.input)
 		if arrayEqual(testcase.input, testcase.want) == false {
-			t.Errorf(`BubbleSort(orig input:%v) generated: %v  expected: %v`,
+			t.Errorf(`BubbleSortRec(orig input:%v) generated: %v  expected: %v`,
 				testcase.orig,
 				testcase.input,
 				testcase.want)
@@ -70,7 +70,7 @@ func TestSelectionSortInt(t *testing.T) {
 	for _, testcase := range genSortingTestData() {
 		SelectionSort(testcase.input)
 		if arrayEqual(testcase.input, testcase.want) == false {
-			t.Errorf(`BubbleSort(orig input:%v) generated: %v  expected: %v`,
+			t.Errorf(`SelectionSort(orig input:%v) generated: %v  expected: %v`,
 				testcase.orig,
 				testcase.input,
 				testcase.want)
@@ -84,7 +84,7 @@ func TestSelectionSortRecInt(t *testing.T) {
 	for _, testcase := range genSortingTestData() {
 		SelectionSortRec(testcase.input)
 		if arrayEqual(testcase.input, testcase.want) == false {
-			t.Errorf(`BubbleSort(orig input:%v) generated: %v  expected: %v`,
+			t.Errorf(`SelectionSortRec(orig input:%v) generated: %v  expected: %v`,
 				testcase.orig,
 				testcase.input,
 				testcase.want)
@@ -97,7 +97,7 @@ func TestInsertionSortInt(t *testing.T) {
 	for _, testcase := range genSortingTestData() {
 		InsertionSort(testcase.input)
 		if arrayEqual(testcase.input, testcase.want) == false {
-			t.Errorf(`BubbleSort(orig input:%v) generated: %v  expected: %v`,
+			t.Errorf(`InsertionSort(orig input:%v) generated: %v  expected: %v`,
 				testcase.orig,
 				testcase.input,
 				testcase.want)
@@ -106,6 +106,21 @@ func TestInsertionSortInt(t *testing.T) {
 		}
 	}
 }
+
+func TestInsertionSortRecInt(t *testing.T) {
+	for _, testcase := range genSortingTestData() {
+		InsertionSortRec(testcase.input)
+		if arrayEqual(testcase.input, testcase.want) == false {
+			t.Errorf(`InsertionSortRec(orig input:%v) generated: %v  expected: %v`,
+				testcase.orig,
+				testcase.input,
+				testcase.want)
+		} else {
+			t.Log(`test success`)
+		}
+	}
+}
+
 func TestQuickSort(t *testing.T) {
 	for _, testcase := range genSortingTestData() {
 		QuickSort(testcase.input)
