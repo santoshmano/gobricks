@@ -1,2 +1,2 @@
 # gobricks
-Learning Go brick by brick
+Learning Golang brick by brick
