@@ -21,16 +21,23 @@ Happy to hear your feedback/questions - santosh.mano@gmail.com
 
 * [go features](#go-features)
     * [maps](#maps)
-* [Lists](#lists) 
-* [Sorting](#sorting)
+* [Lists](#Lists) 
+* [Sorting](#Sorting)
 * [Searching](#searching)
-* [arrays](#arrays)
+* [arrays](#Arrays)
 
-##arrays
+## Arrays
 
-|Problem | Notes|
-| --------|----------|
-|[Best time to buy and sell stock](https://github.com/santoshmano/gobricks/arrays/best_time_to_buy_and_sell_stock.go) | | 
+| Problems | Notes | Links |
+|----------|-------|-------|
+|[Best time to buy and sell stock](https://github.com/santoshmano/gobricks/blob/main/arrays/best_time_to_buy_and_sell_stock.go) | | []() | 
 
-
+## Sorting
+| Algorithms | Notes | Links |
+| --------|----------| ---------|
+|[BubbleSort](https://github.com/santoshmano/gobricks/blob/main/sorting/bubble_sort.go) | | []() |
+|[SelectionSort](https://github.com/santoshmano/gobricks/blob/main/sorting/selection_sort.go) | | []() |
+|[InsertionSort](https://github.com/santoshmano/gobricks/blob/main/sorting/insertion_sort.go) | | []() | 
+|[QuickSort](https://github.com/santoshmano/gobricks/blob/main/sorting/quick_sort.go) | | []() | 
+|[MergeSort](https://github.com/santoshmano/gobricks/blob/main/sorting/merge_sort.go) | | []() | 
 
