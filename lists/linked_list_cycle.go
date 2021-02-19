@@ -1,7 +1,11 @@
 package lists
 
-// https://leetcode.com/problems/linked-list-cycle/
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
+// https://leetcode.com/problems/linked-list-cycle/
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -27,6 +31,7 @@ func hasCycle(head *ListNode) bool {
 	return false
 }
 
+// Implementation with Maps, O(n) space complexity
 func hasCycle1(head *ListNode) bool {
 
 	nodeMap := make(map[*ListNode]int)

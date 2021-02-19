@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
 
 // first first index where target is found, else -1
 func binarySearchFirst(nums []int, target int) int {

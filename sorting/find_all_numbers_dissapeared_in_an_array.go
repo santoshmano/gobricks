@@ -1,4 +1,6 @@
-package leetcode
+package sorting
+
+// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 
 // counting sort technique, O(1) space, O(n) time
 func findDisappearedNumbers(nums []int) []int {

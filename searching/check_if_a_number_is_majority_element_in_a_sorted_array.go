@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array
 
 // first first index where target is found, else -1
 func binarySearchFirst(nums []int, target int) int {

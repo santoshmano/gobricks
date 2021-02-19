@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/single-element-in-a-sorted-array
 
 func singleNonDuplicate(nums []int) int {
 

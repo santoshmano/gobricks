@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/guess-number-higher-or-lower/
 
 /**
  * Forward declaration of guess API.

@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/missing-number-in-arithmetic-progression
 
 func missingNumber(arr []int) int {
 

@@ -1,5 +1,6 @@
-package leetcode
+package searching
 
+// https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size
 /**
  * // This is the ArrayReader's API interface.
  * // You should not implement it, or speculate about its implementation

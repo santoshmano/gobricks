@@ -1,5 +1,6 @@
-package leetcode
+package searching
 
+// https://leetcode.com/problems/search-insert-position/
 func searchInsert(nums []int, target int) int {
 
 	start := 0

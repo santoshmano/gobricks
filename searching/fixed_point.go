@@ -1,5 +1,6 @@
-package leetcode
+package searching
 
+//https://leetcode.com/problems/fixed-point
 func fixedPoint(arr []int) int {
 
 	start := 0

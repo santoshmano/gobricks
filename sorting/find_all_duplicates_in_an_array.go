@@ -1,6 +1,8 @@
-package leetcode
+package sorting
 
-func findErrorNums(nums []int) []int {
+// https://leetcode.com/problems/find-all-duplicates-in-an-array/
+
+func findDuplicates(nums []int) []int {
 
 	for i := 0; i < len(nums); i++ {
 		for nums[i] != i+1 {
@@ -12,10 +14,13 @@ func findErrorNums(nums []int) []int {
 		}
 	}
 
+	var duplist []int
+
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != i+1 {
-			return []int{nums[i], i + 1}
+			duplist = append(duplist, nums[i])
 		}
 	}
-	return []int{-1, -1}
+
+	return duplist
 }

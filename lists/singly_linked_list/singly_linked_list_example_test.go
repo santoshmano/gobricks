@@ -2,7 +2,7 @@ package lists_test
 
 import (
 	"fmt"
-	"golangbricks.com/lists"
+	"github.com/santoshmano/gobricks/lists"
 )
 
 func ExampleSinglyLinkedList() {

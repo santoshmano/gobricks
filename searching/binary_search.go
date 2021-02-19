@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/binary-search/
-package leetcode
+package searching
 
+// iterative binary search
 func search(nums []int, target int) int {
 
 	start := 0
@@ -21,7 +22,8 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-func _search(nums []int, target int, start int, end int) int {
+// recursive binary search
+func search1(nums []int, target int, start int, end int) int {
 	if start > end {
 		return -1
 	}
@@ -31,8 +33,8 @@ func _search(nums []int, target int, start int, end int) int {
 	if nums[mid] == target {
 		return mid
 	} else if nums[mid] < target {
-		return _search(nums, target, mid+1, end)
+		return search1(nums, target, mid+1, end)
 	} else {
-		return _search(nums, target, start, mid-1)
+		return search1(nums, target, start, mid-1)
 	}
 }

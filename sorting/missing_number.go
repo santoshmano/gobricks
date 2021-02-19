@@ -1,6 +1,8 @@
-package leetcode
+package sorting
 
-// using counting sort technique
+// https://leetcode.com/problems/missing-number/
+
+// using cycle sort technique
 func missingNumber(nums []int) int {
 
 	for i := 0; i < len(nums); i++ {

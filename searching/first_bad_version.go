@@ -1,4 +1,6 @@
-package leetcode
+package searching
+
+// https://leetcode.com/problems/first-bad-version/
 
 /**
  * Forward declaration of isBadVersion API.

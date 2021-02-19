@@ -1,6 +1,8 @@
-package leetcode
+package sorting
 
-func findDuplicates(nums []int) []int {
+// https://leetcode.com/problems/set-mismatch/
+
+func findErrorNums(nums []int) []int {
 
 	for i := 0; i < len(nums); i++ {
 		for nums[i] != i+1 {
@@ -12,13 +14,10 @@ func findDuplicates(nums []int) []int {
 		}
 	}
 
-	var duplist []int
-
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != i+1 {
-			duplist = append(duplist, nums[i])
+			return []int{nums[i], i + 1}
 		}
 	}
-
-	return duplist
+	return []int{-1, -1}
 }
