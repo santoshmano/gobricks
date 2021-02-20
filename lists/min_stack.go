@@ -3,7 +3,6 @@ package lists
 // https://leetcode.com/problems/min-stack
 
 /* quick leetcode solution, not performant or thread safe */
-
 type MinStack struct {
 	dataStk []int
 	minStk  []int
@@ -12,7 +11,6 @@ type MinStack struct {
 
 /** initialize your data structure here. */
 func Constructor() MinStack {
-
 	return MinStack{[]int{}, []int{}, -1}
 }
 
