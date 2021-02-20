@@ -9,7 +9,7 @@ Goals for this Repo
 * 1-3 months 
     * [ ] learn Go with focus on datastructures, algorithms, design & leetcode
     * [ ] document and share my programs, resources, running notes
-    * [ ] interview with it
+    * [ ] interview in Go
 * 6-9 months
     * [ ] backend server related learning
     * [ ] build a hobby backend server I have in mind, with Go
@@ -21,7 +21,7 @@ Happy to hear your feedback/questions - santosh.mano@gmail.com
 
 * [go features](#go-features)
     * [maps](#maps)
-* [Lists](#Lists) 
+* [Lists, Stks, Qs](#Lists) 
 * [Sorting](#Sorting)
 * [Searching](#searching)
 * [arrays](#Arrays)
