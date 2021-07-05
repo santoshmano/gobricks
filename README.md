@@ -1,28 +1,7 @@
 # gobricks
 Learning Golang brick by brick
 
-I decided to learn a new language before interviewing this year. Golang was referred to me by a friend and ex-colleague, and after looking around for a week it seemed to fit my near-future needs -
- * C can be painful for many interviews, and Py is frowned by few systems engineers. Go seems to fit well in the middle.
- * It is statically typed, has pointers, performs well, which some team interviews prefer.
- * Can code up a high level design, or a low level program fairly quickly, which helps with the current interviewing trends.
- * Has a good documentation, an active community and is gaining traction with many startups for backend web/cloud infrastructure work.
- * Has features/packages be able to build a backend web server, command-line/web/networking tools - for my hobby projects, so helps me for more than just an interview.
-
-I have heard a lot, about interviewing in a language that you are most comfortable with, this time I want to step outside my comfort zone and be challenged, I think I will be fine, I am ok with failing initially. Ok now that is said, let me Go!
-
-Goals for this Repo 
-* 1-3 months 
-    * [ ] learn Go with focus on datastructures, algorithms, design & leetcode
-    * [ ] document and share my programs, resources, running notes
-    * [ ] interview in Go
-* 6-9 months
-    * [ ] document my backend server related learning
-    * [ ] build a hobby server I have in mind, with Go 
-* 12-24 months
-    * [ ] connect and be a useful Gopher in the community.
-    * [ ] build something production quality 
-
-Happy to hear your feedback/questions - santosh.mano@gmail.com
+Happy to hear your feedback - santosh.mano@gmail.com
 
 * [go features](#go-features)
     * [maps](#maps)
