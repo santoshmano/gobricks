@@ -1,7 +1,7 @@
 package sorting
 
 /*
-Select the smallest element, place it at leftmost index
+Select the smallest element, place it at the leftmost index, repeat.
 
   - given a set of elements ranging (i:n) find the smallest element
    and swap it with element at i.
