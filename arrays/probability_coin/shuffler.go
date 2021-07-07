@@ -17,6 +17,7 @@ func shuffle(a []int) {
 		a[i], a[x] = a[x], a[i]
 	}
 }
+
 func f20() int {
 
 	return 0

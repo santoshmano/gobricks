@@ -37,7 +37,7 @@ func (l *SinglyLinkedList) Head() *SinglyLinkedNode {
 	return l.head
 }
 
-// Insert a value into the head of the list, return the new node pointer
+// InsertVal -  Insert a value into the head of the list, return the new node pointer
 func (l *SinglyLinkedList) InsertVal(val interface{}) *SinglyLinkedNode {
 	return l.InsertNode(&SinglyLinkedNode{val, nil})
 }

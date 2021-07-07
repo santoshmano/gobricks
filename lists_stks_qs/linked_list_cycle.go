@@ -1,4 +1,4 @@
-package lists
+package lists_stks_qs
 
 type ListNode struct {
 	Val  int
