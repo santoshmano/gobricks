@@ -1,4 +1,4 @@
-package lists_stks_qs
+package stacks
 
 // https://leetcode.com/problems/min-stack
 

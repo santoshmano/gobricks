@@ -3,22 +3,23 @@ Learning Golang brick by brick
 
 Happy to hear your feedback - santosh.mano@gmail.com
 
-* [go features](#go-features)
+* [go basics](#go-basics)
     * [maps](#maps)
-* [Lists, Stks, Qs](#Lists) 
+* [Lists, Stacks, Queues](#Lists) 
 * [Sorting](#Sorting)
 * [Searching](#searching)
 * [Arrays](#Arrays)
 
-## Lists, Stks, Qs
+## Lists, Stacks, Queues
 
-| DataStructures | Notes | Links |
+| Data Structure | Links | Notes |
 |----------|-------|-------|
-|[Singly Linked List](https://github.com/santoshmano/gobricks/blob/main/lists/singly_linked_list/singly_linked_list.go) | A list to store any Type of value | []() | 
+|[Singly Linked List](https://github.com/santoshmano/gobricks/blob/main/lists_stks_qs/singly_linked_list/singly_linked_list.go) | | Singly linked list to store any type of value | 
+|[Array Stack](https://github.com/santoshmano/gobricks/blob/main/lists_stks_qs/stacks/array_stack.go) | | Stack ADT implemented using Array Slices | 
+|[Min Stack](https://github.com/santoshmano/gobricks/blob/main/lists_stks_qs/stacks/min_stack.go) | [leetcode](https://leetcode.com/problems/min-stack/) | Stack ADT with a GetMin() operation, which returns the mininum of all all the elements of the stack| 
 
 | Problems | Links | Notes |
 |----------|-------|-------|
-|[Min Stack](https://github.com/santoshmano/gobricks/blob/main/lists/min_stack.go) | [leetcode](https://leetcode.com/problems/min-stack/) | | 
 |[Linked list Cycle](https://github.com/santoshmano/gobricks/blob/main/lists/linked_list_cycle.go) | [leetcode](https://leetcode.com/problems/linked-list-cycle/) | |
 |[Linked list Cycle 2](https://github.com/santoshmano/gobricks/blob/main/lists/linked_list_cycle_ii.go) | [leetcode](https://leetcode.com/problems/linked-list-cycle-ii/) | |
 
