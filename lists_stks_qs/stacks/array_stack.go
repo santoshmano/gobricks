@@ -1,20 +1,20 @@
 package stacks
 
-type Stack struct {
+type ArrayStack struct {
 	elems []interface{}
 }
 
-func NewStack(len int) *Stack {
-	stk := Stack{}
+func NewArrayStack(len int) *ArrayStack {
+	stk := ArrayStack{}
 	stk.elems = make([]interface{}, len)
 	return &stk
 }
 
-func (stk *Stack) Push(elem interface{}) {
+func (stk *ArrayStack) Push(elem interface{}) {
 	stk.elems = append(stk.elems, elem)
 }
 
-func (stk *Stack) Pop() interface{} {
+func (stk *ArrayStack) Pop() interface{} {
 	if len(stk.elems) == 0 {
 		return nil
 	}
@@ -23,7 +23,7 @@ func (stk *Stack) Pop() interface{} {
 	return elem
 }
 
-func (stk *Stack) Peek() interface{} {
+func (stk *ArrayStack) Peek() interface{} {
 	if len(stk.elems) == 0 {
 		return nil
 	}

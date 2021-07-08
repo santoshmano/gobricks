@@ -1,8 +1,8 @@
-package lists_test
+package singly_linked_list_test
 
 import (
 	"fmt"
-	"github.com/santoshmano/gobricks/lists"
+	lists "github.com/santoshmano/gobricks/lists_stks_qs/singly_linked_list"
 )
 
 func ExampleSinglyLinkedList() {

@@ -1,4 +1,4 @@
-package lists
+package singly_linked_list
 
 // A single node of a singly linked list
 type SinglyLinkedNode struct {
