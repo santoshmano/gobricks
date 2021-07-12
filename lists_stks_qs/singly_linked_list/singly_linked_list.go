@@ -1,6 +1,6 @@
 package singly_linked_list
 
-// A single node of a singly linked list
+// SinglyLinkedNode - single node of a singly linked list
 type SinglyLinkedNode struct {
 	// value to hold in the node
 	Val interface{}
