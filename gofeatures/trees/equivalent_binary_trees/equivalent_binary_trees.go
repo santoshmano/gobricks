@@ -6,28 +6,40 @@ import "fmt"
 // Walk walks the tree t sending all values
 // from the tree to the channel ch.
 func Walk(t *tree.Tree, ch chan int) {
+	WalkRecursive(t, ch)
 
+	// close the channel
+	close(ch)
+}
+
+func WalkRecursive(t *tree.Tree, ch chan int) {
 	if t == nil {
 		return
 	}
 
-	Walk(t.Left, ch)
+	WalkRecursive(t.Left, ch)
 	ch <- t.Value
-	Walk(t.Right, ch)
+	WalkRecursive(t.Right, ch)
 }
 
 // Same determines whether the trees
 // t1 and t2 contain the same values.
 func Same(t1, t2 *tree.Tree) bool {
-	t1Ch := make(chan int, 9)
-	t2Ch := make(chan int, 10)
+	t1Ch := make(chan int)
+	t2Ch := make(chan int)
 
 	go Walk(t1, t1Ch)
 	go Walk(t2, t2Ch)
 
-	for i := 0; i < 10; i++ {
-		if <-t1Ch != <-t2Ch {
-			return false
+	for {
+		v1, v1ok := <-t1Ch
+		v2, v2ok := <-t2Ch
+		if v1ok && v2ok && v1 != v2 {
+			return true
+		}
+
+		if !v1ok || !v2ok {
+			return true
 		}
 	}
 	return true

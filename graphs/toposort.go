@@ -5,7 +5,6 @@ import (
 )
 
 var prereqs = map[string][]string{
-
 	"discrete math(dm)":         {"math 1(m1)", "intro to programming(itp)"},
 	"data structures(ds)":       {"discrete math(dm)"},
 	"algorithms(algo)":          {"data structures(ds)", "discrete math(dm)"},
