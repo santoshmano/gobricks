@@ -2,12 +2,12 @@ package stacks_test
 
 import (
 	"fmt"
-	"github.com/santoshmano/gobricks/lists_stks_qs/stacks"
+	stacks2 "github.com/santoshmano/gobricks/stacks"
 )
 
 func ExampleArrayStack() {
 
-	stk := stacks.NewArrayStack(10)
+	stk := stacks2.NewArrayStack(10)
 
 	elems := []int{10, 20, 30, 40, 50}
 	for _, val := range elems {

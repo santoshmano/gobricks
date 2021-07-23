@@ -1,13 +1,12 @@
-package lists_stks_qs
+package stacks
 
 import (
-	"github.com/santoshmano/gobricks/lists_stks_qs/stacks"
 	"strconv"
 )
 
 func evalRPN(tokens []string) int {
 
-	stk := stacks.NewArrayStack(len(tokens))
+	stk := stacks2.NewArrayStack(len(tokens))
 
 	for _, token := range tokens {
 

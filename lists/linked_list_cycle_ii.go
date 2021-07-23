@@ -1,4 +1,4 @@
-package lists_stks_qs
+package lists
 
 // https://leetcode.com/problems/linked-list-cycle-ii/
 

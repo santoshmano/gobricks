@@ -26,6 +26,7 @@ func findAlienOrder(words []string) string {
 	for w1 := 0; w1 < len(words)-1; w1++ {
 		w2 := w1 + 1
 		for w1idx, w2idx := 0, 0; w1idx < len(words[w1]) && w2idx < len(words[w2]); w1idx, w2idx = w1idx+1, w2idx+1 {
+
 			if words[w1][w1idx] == words[w2][w2idx] {
 				continue
 			} else {
