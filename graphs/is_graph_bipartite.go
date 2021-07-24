@@ -1,6 +1,6 @@
 package main
 
-https://leetcode.com/problems/is-graph-bipartite/
+//https://leetcode.com/problems/is-graph-bipartite/
 
 func isBipartite(graph [][]int) bool {
 
@@ -16,7 +16,6 @@ func isBipartite(graph [][]int) bool {
 	for i := 0; i < n; i++ {
 		visited[i] = -1
 	}
-
 
 	var dfs func(vertex int, expectedGroup int) bool
 
