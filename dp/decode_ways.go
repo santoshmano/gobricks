@@ -2,11 +2,16 @@ package dp
 
 import "strconv"
 
+// https://leetcode.com/problems/decode-ways/
+
 // Given an encoded string, return the number of possible valid decodings.
 
 // i/p = string of numbers
 // o/p = int, number of possible valid decodings
 
+// branching factor of tree && height of tree
+// T(n) -
+// S(n) -
 func numDecodings(s string) int {
 
 	// boundary conditions
@@ -33,19 +38,69 @@ func numDecodings(s string) int {
 			return 0
 		}
 
-		if idx < len(s)-1 {
+		// if choosing one character
+		ways := _numDecodings(idx + 1)
 
+		// if choosing two characters
+		if idx < (len(s) - 1) {
 			num, _ := strconv.Atoi(s[idx : idx+2]) // example s[1:3] == "26"
 			if num >= 10 && num <= 26 {
-				return _numDecodings(idx+1) + _numDecodings(idx+2)
+				ways += _numDecodings(idx + 2)
 			}
 		}
 
-		// make it more concise
-		return _numDecodings(idx + 1)
+		return ways
 	}
 
-	// branching factor of tree && height of tree
+	return _numDecodings(0)
+}
+
+// memo
+
+// Given an encoded string, return the number of possible valid decodings.
+
+// i/p = string of numbers
+// o/p = int, number of possible valid decodings
+
+func numDecodingsMemo(s string) int {
+
+	if len(s) == 0 {
+		return 0
+	}
+
+	// key = idx, val = ways
+	memo := make(map[int]int)
+
+	var _numDecodings func(int) int
+
+	_numDecodings = func(idx int) int {
+
+		if idx >= len(s) {
+			return 1
+		}
+
+		// if the first string is a 0, then it is invalid
+		if s[idx] == '0' {
+			return 0
+		}
+
+		if val, ok := memo[idx]; ok {
+			return val
+		}
+
+		// if choosing one character
+		memo[idx] = _numDecodings(idx + 1)
+
+		// if choosing two characters
+		if idx < (len(s) - 1) {
+			num, _ := strconv.Atoi(s[idx : idx+2]) // example s[1:3] == "26"
+			if num >= 10 && num <= 26 {
+				memo[idx] += _numDecodings(idx + 2)
+			}
+		}
+
+		return memo[idx]
+	}
 
 	// speed of coding && time complexity
 
