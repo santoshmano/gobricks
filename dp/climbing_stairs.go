@@ -45,7 +45,7 @@ func climbStairs_rec2(n int) int {
 
 	_cs = func(n, k int) int {
 		if k <= n-2 {
-			return n - k
+			return n - k // test
 		}
 
 		return _cs(n, k+1) + _cs(n, k+2)
