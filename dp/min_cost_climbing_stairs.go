@@ -1,6 +1,6 @@
 package dp
+
 // https://leetcode.com/problems/min-cost-climbing-stairs/
-xx
 // minCost(n) = min(minCost(n-1), minCost(n-2)) + cost(n-1)
 // T(n) = O(2^n)
 // S(n) = O(n)
