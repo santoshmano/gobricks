@@ -12,50 +12,38 @@ package lists
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	// traverse both the lists
-	// add the numbers and the remainder and create new list
-	// traverse the remainder of the longer list
+	// add the numbers and the remainder and keep creating new nodes for the new list
+	// add a last node if remainder exists
 
 	head := ListNode{0, nil}
 	cur := &head
 	var remainder int
 	var sum int
 
-	for l1 != nil && l2 != nil {
+	for (l1 != nil) || (l2 != nil) {
+		x, y := 0, 0
 
-		sum = l1.Val + l2.Val + remainder
+		if l1 != nil {
+			x = l1.Val
+		}
+		if l2 != nil {
+			y = l2.Val
+		}
+
+		sum = x + y + remainder
 		remainder = sum / 10
 		sum = sum % 10
 
 		node := ListNode{sum, nil}
 		cur.Next = &node
 		cur = &node
-		//fmt.Println(cur.Val, cur.Next, l1.Val, l2.Val, sum, remainder)
-		l1 = l1.Next
-		l2 = l2.Next
-	}
 
-	for l1 != nil {
-		sum = l1.Val + remainder
-		remainder = sum / 10
-		sum = sum % 10
-
-		node := ListNode{sum, nil}
-		cur.Next = &node
-		cur = &node
-		//fmt.Println(cur.Val, cur.Next, l1.Val, sum, remainder)
-		l1 = l1.Next
-	}
-
-	for l2 != nil {
-		sum = l2.Val + remainder
-		remainder = sum / 10
-		sum = sum % 10
-
-		node := ListNode{sum, nil}
-		cur.Next = &node
-		cur = &node
-		//fmt.Println(cur.Val, cur.Next, l2.Val, sum, remainder)
-		l2 = l2.Next
+		if l1 != nil {
+			l1 = l1.Next
+		}
+		if l2 != nil {
+			l2 = l2.Next
+		}
 	}
 
 	if remainder != 0 {
