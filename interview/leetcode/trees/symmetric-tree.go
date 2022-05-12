@@ -23,12 +23,13 @@ func traverse(r1 *TreeNode, r2 *TreeNode) bool {
 		return true
 	}
 
-	if r1 != nil && r2 != nil {
-		if r1.Val != r2.Val {
-			return false
-		}
-		return traverse(r1.Left, r2.Right) && traverse(r1.Right, r2.Left)
+	if r1 == nil || r2 == nil {
+		return false
 	}
 
-	return false
+	if r1.Val != r2.Val {
+		return false
+	}
+
+	return traverse(r1.Left, r2.Right) && traverse(r1.Right, r2.Left)
 }
