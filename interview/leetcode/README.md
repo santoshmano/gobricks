@@ -1,6 +1,5 @@
 # LeetCode Programs
-
-Adding to this readme is actually painful, maybe adding to an excel and converting it to a readme is easier. But it is giving me a moment to pause and collect myself, so continuing to add to this. 
+Adding to this readme is not very efficient, but gives me a moment to pause and collect myself.
 
 ## Arrays
 
@@ -37,6 +36,10 @@ Adding to this readme is actually painful, maybe adding to an excel and converti
 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
+|[70]( https://leetcode.com/problems/climbing-stairs/ )| <span style="color: green"> done </span>| [ Climbing Stairs ]( dp/climbing-stairs.go )| |
+|[121]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ )| <span style="color: green"> done </span>| [ Best Time to Buy and Sell Stock ]( dp/best-time-to-buy-and-sell-stock.go )| |
+|[53]( https://leetcode.com/problems/maximum-subarray/ )| <span style="color: green"> done </span>| [ Maximum Subarray ]( dp/maximum-subarray.go )| |
+|[198]( https://leetcode.com/problems/house-robber/ )| <span style="color: green"> done </span>| [ House Robber ]( dp/house-robber.go )| |
 
 ## Design 
 
@@ -53,18 +56,20 @@ Adding to this readme is actually painful, maybe adding to an excel and converti
 |---------|--------|---------|---------|
 
 
+
+
+
 >> template for this file
 
-|[108](
-https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+|[198](
+https://leetcode.com/problems/house-robber/
 )|
 <span style="color: green">
 done
 </span>|
 [
-Convert Sorted Array to Binary Search Tree
+House Robber
 ](
-trees/convert-sorted-array-to-binary-search-tree.go
+dp/house-robber.go
 )|
-How would you do it iteratively?
 | 

@@ -13,7 +13,7 @@ package dp
 //
 // recurrence relation = approach 1
 //
-//            | 0, k == n
+//            | 0, k >= n
 // cs(n, k) = | 1, k == n-1
 //            | 2, k == n-2
 //            | cs(n, k+1) + cs(n, k+2), k < n-2
@@ -54,7 +54,7 @@ func climbStairs_rec2(n int) int {
 	return _cs(n, 0)
 }
 
-func climbStairs_memo(n int) int {
+func climbStairsMemo(n int) int {
 	if n <= 2 {
 		return n
 	}
@@ -64,6 +64,7 @@ func climbStairs_memo(n int) int {
 	ways[2] = 2
 
 	var _cs func(int) int
+
 	_cs = func(n int) int {
 
 		if val, ok := ways[n]; ok {
