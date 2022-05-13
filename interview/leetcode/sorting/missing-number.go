@@ -6,6 +6,29 @@ package sorting
 func missingNumber(nums []int) int {
 
 	for i := 0; i < len(nums); i++ {
+		for nums[i] != i {
+			val := nums[i]
+			if val == len(nums) {
+				break
+			}
+			nums[i], nums[val] = nums[val], nums[i]
+		}
+	}
+
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != i {
+			return i
+		}
+	}
+
+	return len(nums)
+
+}
+
+// using cycle sort technique
+func missingNumber1(nums []int) int {
+
+	for i := 0; i < len(nums); i++ {
 
 		// work on it this index till we get the right value
 		for j := i; nums[j] != j; {
