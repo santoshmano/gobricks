@@ -55,7 +55,7 @@ func missingNumber1(nums []int) int {
 }
 
 // math technique; not favourable
-func missingNumber1(nums []int) int {
+func missingNumber2(nums []int) int {
 
 	n := len(nums)
 	sum := 0

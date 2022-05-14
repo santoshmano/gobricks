@@ -17,8 +17,8 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
-
 |[20]( https://leetcode.com/problems/valid-parentheses/ )| <span style="color: green"> done </span>| [ Valid Parentheses ]( list_stk_q/valid-parentheses.go )| | 
+
 ## Trees
 
 | LC | Status | Program | Notes |
@@ -32,7 +32,7 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 ## Sorting Searching 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
-|[268]( https://leetcode.com/problems/missing-number/ )| <span style="color: green"> done </span>| [ Missing Number ]( sorting/missing-number.go )| cycling sort is fun |
+|[268](https://leetcode.com/problems/missing-number/)| <span style="color: green"> done </span>| [ Missing Number ]( sorting/missing-number.go )| cycling sort is fun |
 
 ## Dynamic Programming 
 | LC | Status | Program | Notes |
@@ -45,10 +45,13 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 ## Design 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
+|[155]( https://leetcode.com/problems/min-stack/ )| <span style="color: green"> done </span>| [ Min Stack ]( design/min-stack.go )| interfaces |
+|[384]( https://leetcode.com/problems/shuffle-an-array/ )| <span style="color: green"> done </span>| [ Shuffle an Array ]( design/shuffle-an-array.go )| no need to create new arrays, can just use the same input slice |
 
 ## Math 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
+|[412]( https://leetcode.com/problems/fizz-buzz/ )| <span style="color: orange "> redo </span>| [ Fizz Buzz ]( math/fizz-buzz.go )| try an optimized version with maps 
 
 ## Bits
 | LC | Status | Program | Notes |
@@ -62,18 +65,18 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 |---------|--------|---------|---------|
 
 
->> template for this file
+> template for this file
 
-|[268](
-https://leetcode.com/problems/missing-number/
+|[412](
+https://leetcode.com/problems/fizz-buzz/
 )|
-<span style="color: green">
-done
+<span style="color: orange ">
+redo
 </span>|
 [
-Missing Number
+Fizz Buzz
 ](
-sorting/missing-number.go
+math/fizz-buzz.go
 )|
-cycling sort is fun
+try an optimized version with maps
 | 
