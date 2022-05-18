@@ -20,6 +20,14 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
+|[344]( https://leetcode.com/problems/reverse-string/ )| <span style="color: green"> done </span>| [ Reverse String ]( strings/reverse-string.go )| |
+|[7]( https://leetcode.com/problems/reverse-integer/ )| <span style="color: green"> done </span>| [ Reverse Integer ]( strings/reverse-integer.go )| |
+|[387]( https://leetcode.com/problems/first-unique-character-in-a-string/ )| <span style="color: green"> done </span>| [ First Unique Character in a String ]( strings/first-unique-character-in-a-string.go )| |
+|[242]( https://leetcode.com/problems/valid-anagram/ )| <span style="color: green"> done </span>| [ Valid Anagram ]( strings/valid-anagram.go )| |
+|[125]( https://leetcode.com/problems/valid-palindrome/ )| <span style="color: green"> done </span>| [ Valid Palindrome ]( strings/valid-palindrome.go )| |
+|[28]( https://leetcode.com/problems/implement-strstr/ )| <span style="color: green"> done </span>| [ Implement strStr() ]( strings/implement-strStr.go )| |
+
+
 
 ### Lists, Stacks, Qs 
 
@@ -76,16 +84,15 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 
 > template for this file
 
-|[48](
-https://leetcode.com/problems/rotate-image/
+|[14](
+https://leetcode.com/problems/longest-common-prefix/
 )|
-<span style="color: red">
-redo
+<span style="color: green">
+done
 </span>|
 [
-Rotate Image
+Longest Common Prefix
 ](
-arrays/rotate-image.go
+strings/longest-common-prefix.go
 )|
-Redo from scratch
 | 

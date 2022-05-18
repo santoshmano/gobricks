@@ -1,9 +1,9 @@
-package word
+package strings
 
 // https://leetcode.com/problems/reverse-integer/
 import "math"
 
-func reverse(x int) int {
+func reverse1(x int) int {
 	minus := false
 	if x < 0 {
 		minus = true
@@ -24,5 +24,28 @@ func reverse(x int) int {
 		return y * -1
 	} else {
 		return y
+	}
+}
+
+func reverse(x int) int {
+
+	r := 0
+
+	neg := 1
+
+	if x < 0 {
+		neg = -1
+		x = x * -1
+	}
+
+	for x > 0 {
+		r = r*10 + x%10
+		x = x / 10
+	}
+
+	if r <= 1<<31-1 && r >= -1<<31 {
+		return r * neg
+	} else {
+		return 0
 	}
 }
