@@ -7,6 +7,14 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 |---------|--------|---------|---------|
 |[26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| <span style="color: green"> done </span>|[Remove Duplicates from Sorted Array](remove-duplicates-from-sorted-array.go) | Use read/write variables as the 2 pointers | 
 |[118]( https://leetcode.com/problems/pascals-triangle/ )| <span style="color: green"> done </span>| [ Pascals Triangle ]( bits/pascals-triangle.go )| | 
+|[122]( https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii )| <span style="color: orange "> redo </span>| [ Best Time to Buy and Sell Stock II ]( arrays/best-time-to-buy-and-sell-stock-ii.go )| | 
+|[189]( https://leetcode.com/problems/rotate-array/ )| <span style="color: green "> done </span>| [ Rotate Array ]( arrays/rotate-array.go )| cyclic replacement is fun |
+|[217]( https://leetcode.com/problems/contains-duplicate/ )| <span style="color: green "> done </span>| [ Contains Duplicate ]( arrays/contains-duplicate.go )| |
+|[136]( https://leetcode.com/problems/single-number/ )| <span style="color: green "> done </span>| [ Single Number ]( arrays/single-number.go )| |
+|[66]( https://leetcode.com/problems/plus-one/ )| <span style="color: green "> done </span>| [ Plus One ]( arrays/plus-one.go )| |
+|[1]( https://leetcode.com/problems/two-sum/ )| <span style="color: green "> done </span>| [ Two Sum ]( arrays/two-sum.go )| |
+|[36]( https://leetcode.com/problems/valid-sudoku/ )| <span style="color: green "> done </span>| [ Valid Sudoku ]( arrays/valid-sudoku.go )| |
+|[48]( https://leetcode.com/problems/rotate-image/ )| <span style="color: red"> redo </span>| [ Rotate Image ]( arrays/rotate-image.go )| Redo from scratch |
 
 ## Strings 
 
@@ -52,6 +60,7 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 | LC | Status | Program | Notes |
 |---------|--------|---------|---------|
 |[412]( https://leetcode.com/problems/fizz-buzz/ )| <span style="color: orange "> redo </span>| [ Fizz Buzz ]( math/fizz-buzz.go )| try an optimized version with maps 
+|[204]( https://leetcode.com/problems/count-primes/ )| <span style="color: orange "> </span>| [ Fizz Buzz ]( math/count-primes.go )| |
 
 ## Bits
 | LC | Status | Program | Notes |
@@ -67,16 +76,16 @@ Adding to this readme is not very efficient, but gives me a moment to pause and 
 
 > template for this file
 
-|[412](
-https://leetcode.com/problems/fizz-buzz/
+|[48](
+https://leetcode.com/problems/rotate-image/
 )|
-<span style="color: orange ">
+<span style="color: red">
 redo
 </span>|
 [
-Fizz Buzz
+Rotate Image
 ](
-math/fizz-buzz.go
+arrays/rotate-image.go
 )|
-try an optimized version with maps
+Redo from scratch
 | 
