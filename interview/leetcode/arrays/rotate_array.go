@@ -1,6 +1,6 @@
 package arrays
 
-func rotate(nums []int, k int) {
+func rotate1(nums []int, k int) {
 
 	/*
 		Time Complexity - O(n)
@@ -36,6 +36,51 @@ func rotate(nums []int, k int) {
 		nums[i] = arr[j]
 		i++
 		j++
+	}
+
+}
+
+/*
+
+ 0 1 2 3 4 5 6, k=3
+ 1 2 3 4 5 6 7
+       1
+             4
+     7     3
+
+*/
+
+func rotate(nums []int, k int) {
+
+	// move n items, to a new position
+	//  - (curpos+k)%n
+
+	i := 0
+	k = k % len(nums)
+	if k == 0 {
+		return
+	}
+	curPos := i
+	curVal := nums[i]
+
+	count := len(nums)
+
+	for i < len(nums) && count > 0 {
+
+		nextPos := (curPos + k) % len(nums)
+		nextVal := nums[nextPos]
+
+		nums[nextPos] = curVal
+
+		if nextPos == i {
+			i++
+			curPos = i
+			curVal = nums[i]
+		} else {
+			curPos = nextPos
+			curVal = nextVal
+		}
+		count--
 	}
 
 }

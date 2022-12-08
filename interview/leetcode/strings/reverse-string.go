@@ -1,4 +1,4 @@
-package word
+package strings
 
 // https://leetcode.com/problems/reverse-string/
 
