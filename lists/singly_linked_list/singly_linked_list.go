@@ -8,7 +8,7 @@ type SinglyLinkedNode struct {
 	Next *SinglyLinkedNode
 }
 
-// A singly linked list
+// SinglyLinkedList - A singly linked list
 type SinglyLinkedList struct {
 	// pointer to the first node
 	head *SinglyLinkedNode
@@ -22,17 +22,17 @@ func (l *SinglyLinkedList) init() *SinglyLinkedList {
 	return l
 }
 
-// Create a new Singly Linked List and initialize it
+// NewSinglyLinkedList - Create a new Singly Linked List and initialize it
 func NewSinglyLinkedList() *SinglyLinkedList {
 	return new(SinglyLinkedList).init()
 }
 
-// Return the length of the list
+// Len - Return the length of the list
 func (l *SinglyLinkedList) Len() int {
 	return l.len
 }
 
-// Return the first node in the list
+// Head - Return the first node in the list
 func (l *SinglyLinkedList) Head() *SinglyLinkedNode {
 	return l.head
 }
@@ -42,7 +42,7 @@ func (l *SinglyLinkedList) InsertVal(val interface{}) *SinglyLinkedNode {
 	return l.InsertNode(&SinglyLinkedNode{val, nil})
 }
 
-// Insert a node to the head of the list, return back the same node pointer
+// InsertNode - Insert a node to the head of the list, return back the same node pointer
 func (l *SinglyLinkedList) InsertNode(node *SinglyLinkedNode) *SinglyLinkedNode {
 	node.Next = l.head
 	l.head = node
@@ -51,7 +51,7 @@ func (l *SinglyLinkedList) InsertNode(node *SinglyLinkedNode) *SinglyLinkedNode 
 	return node
 }
 
-// Delete the first node with a value from the list
+// DeleteVal - delete the first node with a value from the list
 func (l *SinglyLinkedList) DeleteVal(val interface{}) {
 	var prev *SinglyLinkedNode = nil
 
@@ -69,7 +69,7 @@ func (l *SinglyLinkedList) DeleteVal(val interface{}) {
 	}
 }
 
-// Find a value in the list, return back the value in the Node
+// FindVal - Find a value in the list, return the value in the Node
 func (l *SinglyLinkedList) FindVal(val interface{}) interface{} {
 	for cur := l.head; cur != nil; cur = cur.Next {
 		if cur.Val == val {
